@@ -26,7 +26,7 @@ export default function Home() {
           Get to Know Me
         </Link>
         <Link className="action-btn" href="/projects">
-          Check out my works
+          Check Out My Works
         </Link>
       </div>
     </main>
