@@ -55,16 +55,59 @@ export default function SplineContainer() {
           avatar.current.rotation.y = 0;
           avatar.current.rotation.z = 0;
         } else if (fullScreenHeight > fullScreenWidth) {
-          avatar.current.position.x = 0;
-          let yPosition = -900;
-          avatar.current.position.y = yPosition;
-          avatar.current.position.z = -40;
-          avatar.current.scale.x = 2;
-          avatar.current.scale.y = 2;
-          avatar.current.scale.z = 2;
-          avatar.current.rotation.x = 0;
-          avatar.current.rotation.y = 0;
-          avatar.current.rotation.z = 0;
+          switch (pathname) {
+            case "/about":
+              if (fullScreenHeight > 1000) {
+                avatar.current.position.x = 0;
+                avatar.current.position.y = -900;
+                avatar.current.position.z = -40;
+                avatar.current.scale.x = 2;
+                avatar.current.scale.y = 2;
+                avatar.current.scale.z = 2;
+                avatar.current.rotation.x = 0;
+                avatar.current.rotation.y = 0;
+                avatar.current.rotation.z = 0;
+              } else {
+                avatar.current.position.x = 0;
+                avatar.current.position.y = 0;
+                avatar.current.position.z = 0;
+                avatar.current.scale.x = 0;
+                avatar.current.scale.y = 0;
+                avatar.current.scale.z = 0;
+                avatar.current.rotation.x = 0;
+                avatar.current.rotation.y = 0;
+                avatar.current.rotation.z = 0;
+              }
+
+              break;
+            case "/skills":
+              avatar.current.position.x = -450;
+              avatar.current.position.y = -2100;
+              avatar.current.position.z = -40;
+              avatar.current.scale.x = 6;
+              avatar.current.scale.y = 6;
+              avatar.current.scale.z = 6;
+              avatar.current.rotation.x = -0.2;
+              avatar.current.rotation.y = 0.25;
+              avatar.current.rotation.z = -0.05;
+              break;
+            case "/work":
+            case "/projects":
+              avatar.current.scale.x = 0;
+              avatar.current.scale.y = 0;
+              avatar.current.scale.z = 0;
+              break;
+            default:
+              avatar.current.position.x = 0;
+              avatar.current.position.y = -900;
+              avatar.current.position.z = -40;
+              avatar.current.scale.x = 2;
+              avatar.current.scale.y = 2;
+              avatar.current.scale.z = 2;
+              avatar.current.rotation.x = 0;
+              avatar.current.rotation.y = 0;
+              avatar.current.rotation.z = 0;
+          }
         } else {
           switch (pathname) {
             case "/about":
