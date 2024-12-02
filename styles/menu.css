@@ -29,7 +29,7 @@
   line-height: 100%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 640px) {
   .menu-link-item-holder a {
     font-size: 40px;
   }

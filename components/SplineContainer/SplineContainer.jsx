@@ -41,46 +41,71 @@ export default function SplineContainer() {
 
   useEffect(() => {
     const updateAvatarPosition = () => {
+      let fullScreenWidth = screen.width;
+      let fullScreenHeight = screen.height;
       if (avatar.current) {
-        switch (pathname) {
-          case "/about":
-            avatar.current.position.x = 0;
-            avatar.current.position.y = -1300;
-            avatar.current.position.z = -40;
-            avatar.current.scale.x = 3.5;
-            avatar.current.scale.y = 3.5;
-            avatar.current.scale.z = 3.5;
-            avatar.current.rotation.x = 0;
-            avatar.current.rotation.y = 1.5;
-            avatar.current.rotation.z = 0;
-            break;
-          case "/skills":
-            avatar.current.position.x = -450;
-            avatar.current.position.y = -2100;
-            avatar.current.position.z = -40;
-            avatar.current.scale.x = 6;
-            avatar.current.scale.y = 6;
-            avatar.current.scale.z = 6;
-            avatar.current.rotation.x = -0.2;
-            avatar.current.rotation.y = 0.25;
-            avatar.current.rotation.z = -0.05;
-            break;
-          case "/work":
-          case "/projects":
-            avatar.current.scale.x = 0;
-            avatar.current.scale.y = 0;
-            avatar.current.scale.z = 0;
-            break;
-          default:
-            avatar.current.position.x = 400;
-            avatar.current.position.y = -800;
-            avatar.current.position.z = -40;
-            avatar.current.scale.x = 3;
-            avatar.current.scale.y = 3;
-            avatar.current.scale.z = 3;
-            avatar.current.rotation.x = 0;
-            avatar.current.rotation.y = 0;
-            avatar.current.rotation.z = 0;
+        if (fullScreenHeight > fullScreenWidth && fullScreenHeight < 750) {
+          avatar.current.position.x = 0;
+          avatar.current.position.y = 0;
+          avatar.current.position.z = 0;
+          avatar.current.scale.x = 0;
+          avatar.current.scale.y = 0;
+          avatar.current.scale.z = 0;
+          avatar.current.rotation.x = 0;
+          avatar.current.rotation.y = 0;
+          avatar.current.rotation.z = 0;
+        } else if (fullScreenHeight > fullScreenWidth) {
+          avatar.current.position.x = 0;
+          let yPosition = -900;
+          avatar.current.position.y = yPosition;
+          avatar.current.position.z = -40;
+          avatar.current.scale.x = 2;
+          avatar.current.scale.y = 2;
+          avatar.current.scale.z = 2;
+          avatar.current.rotation.x = 0;
+          avatar.current.rotation.y = 0;
+          avatar.current.rotation.z = 0;
+        } else {
+          switch (pathname) {
+            case "/about":
+              avatar.current.position.x = 0;
+              avatar.current.position.y = -1300;
+              avatar.current.position.z = -40;
+              avatar.current.scale.x = 3.5;
+              avatar.current.scale.y = 3.5;
+              avatar.current.scale.z = 3.5;
+              avatar.current.rotation.x = 0;
+              avatar.current.rotation.y = 1.5;
+              avatar.current.rotation.z = 0;
+              break;
+            case "/skills":
+              avatar.current.position.x = -450;
+              avatar.current.position.y = -2100;
+              avatar.current.position.z = -40;
+              avatar.current.scale.x = 6;
+              avatar.current.scale.y = 6;
+              avatar.current.scale.z = 6;
+              avatar.current.rotation.x = -0.2;
+              avatar.current.rotation.y = 0.25;
+              avatar.current.rotation.z = -0.05;
+              break;
+            case "/work":
+            case "/projects":
+              avatar.current.scale.x = 0;
+              avatar.current.scale.y = 0;
+              avatar.current.scale.z = 0;
+              break;
+            default:
+              avatar.current.position.x = 400;
+              avatar.current.position.y = -800;
+              avatar.current.position.z = -40;
+              avatar.current.scale.x = 3;
+              avatar.current.scale.y = 3;
+              avatar.current.scale.z = 3;
+              avatar.current.rotation.x = 0;
+              avatar.current.rotation.y = 0;
+              avatar.current.rotation.z = 0;
+          }
         }
       }
     };
@@ -100,9 +125,9 @@ export default function SplineContainer() {
     <motion.div
       animate={animation}
       variants={variants}
-      className="absolute top-0 h-full w-full -z-5"
+      className="absolute top-0 min-h-screen h-screen w-full -z-5"
     >
-      <canvas id="spline" />
+      <canvas id="spline" className="min-h-screen h-screen" />
     </motion.div>
   );
 }

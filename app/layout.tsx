@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Open_Sans } from "next/font/google";
 import "../styles/globals.css";
 import NavBar from "@/components/NavBar/NavBar";
@@ -10,6 +10,11 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: ".JB Fullstack Developer Web Portfolio",
   description: "Fullstack developer web portfolio for John Bengemin Uy",
+};
+
+export const viewport: Viewport = {
+  initialScale: 1,
+  width: "device-width",
 };
 
 export default function RootLayout({
