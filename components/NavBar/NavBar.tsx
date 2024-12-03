@@ -98,7 +98,7 @@ export default function NavBar() {
             </div>
           </div>
 
-          <nav className="flex flex-col gap-4 pl-16 pt-4 md:pl-28 lg:pl-40 xl:pt-8 2xl:pt-24">
+          <nav className="flex flex-col gap-1 pl-16 pt-2 md:pl-28 lg:pl-40 xl:pt-8 2xl:pt-24">
             {menuLinks.map((link, index) => (
               <div key={index} className="menu-link-item">
                 <div className="menu-link-item-holder" onClick={toggleMenu}>

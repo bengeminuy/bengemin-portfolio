@@ -9,7 +9,7 @@ export default function Skills() {
     <main className="flex flex-col gap-2 pt-28 2xl:pt-32 xl:pr-16 2xl:pr-0 h-screen w-full max-w-screen-2xl items-center">
       <h1 className="text-xl xl:text-6xl 2xl:text-8xl leading-normal font-bold w-5/6 portrait:w-full portrait:pl-4 opacity-80">
         SKILLS
-        <span className="text-xs xl:text-3xl 2xl:text-4xl align-top pl-2">
+        <span className="text-xs xl:text-3xl 2xl:text-4xl align-top pl-1 xl:pl-2">
           02
         </span>
       </h1>
