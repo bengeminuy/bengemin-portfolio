@@ -10,7 +10,7 @@ export default function SkillCard({
   cardText: string;
 }) {
   return (
-    <div className="xl:w-[100px] xl:h-[100px] 2xl:w-[150px] 2xl:h-[150px] p-4 bg-custom_accent2 border-gray-600 rounded-lg shadow hvr-glow flex flex-col items-center justify-center">
+    <div className="w-[80px] h-[80px] xl:w-[100px] xl:h-[100px] 2xl:w-[150px] 2xl:h-[150px] p-4 bg-custom_accent2 border-gray-600 rounded-lg shadow hvr-glow flex flex-col items-center justify-center">
       <Image
         className="h-1/2 w-1/2 object-contain grow"
         src={image}
