@@ -11,7 +11,7 @@ export default function About() {
           01
         </span>
       </h1>
-      <div className="flex flex-col p-4 xl:p-8 pr-0 landscape:w-2/3 landscape:max-w-2/3 gap-1 xl:gap-4 xl:text-l 2xl:text-2xl portrait:pb-20 portrait:overflow-y-auto scrolling-touch portrait:scrollable-div">
+      <div className="flex flex-col p-4 xl:p-8 pr-0 landscape:w-2/3 landscape:max-w-2/3 gap-1 xl:gap-4 xl:text-l 2xl:text-2xl portrait:pb-20 portrait:overflow-y-auto scrollable-div">
         <p className="indent-12 text-justify">
           {"Hello there! I'm John Bengemin Uy, a passionate "}
           <span className="text-custom_accent font-bold">

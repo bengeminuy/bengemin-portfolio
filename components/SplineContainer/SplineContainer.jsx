@@ -59,7 +59,7 @@ export default function SplineContainer() {
             case "/about":
               if (fullScreenHeight > 1000) {
                 avatar.current.position.x = 0;
-                avatar.current.position.y = -900;
+                avatar.current.position.y = -1000;
                 avatar.current.position.z = -40;
                 avatar.current.scale.x = 2;
                 avatar.current.scale.y = 2;

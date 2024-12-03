@@ -38,6 +38,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   overflow: hidden;
+  overscroll-behavior: none;
 }
 
 @layer components {
