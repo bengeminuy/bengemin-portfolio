@@ -17,7 +17,7 @@ export default function Projects() {
           04
         </span>
       </h1>
-      <div className="flex flex-wrap justify-center items-center px-4 w-full portrait:w-full gap-2 xl:gap-4 2xl:gap-8 2xl:text-2xl xl:text-l portrait:pb-4 portrait:overflow-y-auto scrollable-div">
+      <div className="flex flex-wrap justify-center items-center px-4 w-full 2xl:w-5/6 gap-2 xl:gap-4 2xl:gap-8 2xl:text-2xl xl:text-l portrait:pb-4 portrait:overflow-y-auto scrollable-div">
         <div className="w-[250px] xl:w-[350px] 2xl:w-[400px] aspect-[4/3] rounded-xl shadow z-10 overflow-hidden">
           <figure className="relative object-cover rounded-xl overflow-hidden">
             <Image className="rounded-xl" src={Nokia} alt="nokia image" />
