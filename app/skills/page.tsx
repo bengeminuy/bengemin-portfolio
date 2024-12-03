@@ -13,14 +13,14 @@ export default function Skills() {
           02
         </span>
       </h1>
-      <div className="flex py-2 px-4 pr-0 w-5/6 gap-4 2xl:text-2xl xl:text-l portrait:flex-col portrait:pb-20 portrait:w-full portrait:overflow-y-auto scrollable-div">
+      <div className="flex py-2 px-4 w-5/6 gap-4 2xl:text-2xl xl:text-l portrait:flex-col portrait:b-20 portrait:w-full portrait:overflow-y-auto scrollable-div">
         <div className="flex flex-col w-2/5 max-w-2/5 items-end portrait:w-full portrait:max-w-full portrait:items-start">
           <h2 className="font-bold 2xl:text-4xl xl:text-3xl pb-2">MAIN</h2>
           <div className="flex portrait:flex-row w-full flex-wrap p-2 gap-2 justify-end portrait:justify-center">
             <MainSkills />
           </div>
         </div>
-        <div className="inline-block h-full w-0.5 self-stretch bg-neutral-100 opacity-80 portrait:opacity-0" />
+        <div className="inline-block landscape:h-full landscape:w-0.5 self-stretch bg-neutral-100 opacity-80 portrait:opacity-0" />
         <div className="flex flex-col w-3/5 max-w-3/5 portrait:w-full portrait:max-w-full portrait:items-start">
           <h2 className="font-bold 2xl:text-4xl xl:text-3xl pb-2">
             SUB
