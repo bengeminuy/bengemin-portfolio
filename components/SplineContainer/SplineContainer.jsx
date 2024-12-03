@@ -78,6 +78,7 @@ export default function SplineContainer() {
                 avatar.current.rotation.y = 0;
                 avatar.current.rotation.z = 0;
               }
+              break;
             case "/skills":
               avatar.current.position.x = -450;
               avatar.current.position.y = -2100;
