@@ -4,7 +4,7 @@ import "../styles/animated_text.css";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-8 p-12 pt-32 md:p-14 md:pt-36 xl:p-16 xl:pt-40 2xl:p-16 2xl:pt-72 w-full max-w-screen-2xl">
+    <main className="flex flex-col gap-8 p-12 pt-32 md:p-14 md:pt-36 xl:p-16 xl:pt-40 2xl:p-16 2xl:pt-72 w-full max-w-screen-2xl transform scale-100">
       <hgroup className="flex flex-col justify-between">
         <h1 className="text-left text-3xl md:text-5xl xl:text-7xl leading-normal font-bold pb-4 md:pb-6 lg:pb-8">{`HI, I'M BENGEMIN!`}</h1>
         <div className="animated-text">

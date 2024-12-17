@@ -4,7 +4,7 @@ import "../../styles/fading_border.css";
 
 export default function About() {
   return (
-    <main className="flex flex-col gap-2 xl:gap-4 pt-28 pr-4 xl:pr-16 2xl:pt-32 2xl:pr-0 w-full h-screen max-w-screen-2xl items-end">
+    <main className="flex flex-col gap-2 xl:gap-4 pt-28 pr-4 xl:pr-16 2xl:pt-32 2xl:pr-0 w-full h-screen max-w-screen-2xl items-end transform scale-100">
       <h1 className="text-xl xl:text-6xl 2xl:text-8xl leading-normal font-bold w-max opacity-80">
         ABOUT
         <span className="text-xs xl:text-3xl 2xl:text-4xl align-top pl-1 xl:pl-2">
