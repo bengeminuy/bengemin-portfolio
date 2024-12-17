@@ -41,6 +41,24 @@ body {
   overscroll-behavior: none;
 }
 
+@media (min-resolution: 1.25dppx) {
+  body {
+    zoom: 0.8;
+  }
+}
+
+@media (min-resolution: 1.5dppx) {
+  body {
+    zoom: 0.67; /* Adjust content scaling for 150% DPI */
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  body {
+    zoom: 0.5; /* Adjust content scaling for 200% DPI */
+  }
+}
+
 @layer components {
   .timeline-img {
     @apply h-24 w-24 object-cover rounded-full shadow-md border-4 border-custom_accent2 xs:absolute md:mx-auto md:left-0 md:right-0;

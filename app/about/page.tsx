@@ -55,7 +55,14 @@ export default function About() {
         <Link className="action-btn" href="/skills">
           Check my skills
         </Link>
-        <button className="action-btn">Download my resume</button>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="action-btn"
+        >
+          Download my resume
+        </a>
       </div>
     </main>
   );

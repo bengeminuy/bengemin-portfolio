@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   initialScale: 1,
   width: "device-width",
+  userScalable: false,
 };
 
 export default function RootLayout({
@@ -24,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={openSans.className}>
+      <body className={openSans.className + " box-border transform scale-100"}>
         <NavBar />
         <SplineContainer />
         {children}
