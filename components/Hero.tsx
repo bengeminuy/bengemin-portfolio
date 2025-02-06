@@ -12,6 +12,7 @@ export default function Hero() {
         className="h-[20rem] w-[15rem] md:h-[28rem] md:w-[21rem] aspect-3/4 rounded-md shadow-inner object-cover"
         priority
       />
+
       <div className="flex flex-col landscape:pl-8 portrait:pt-4">
         <p className="pt-4 landscape:pt-8 portrait:text-sm text-2xl text-center landscape:text-start font-semibold text-white/70">
           {"I'm John Bengemin Uy, and I love"}
