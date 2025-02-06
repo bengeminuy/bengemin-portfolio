@@ -1,3 +1,11 @@
+"use client";
+
+import { useEffect } from "react";
+
+// @ts-expect-error: AOS is found
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Image from "next/image";
 
 import CGC from "../public/images/projects/cgc.png";
@@ -6,15 +14,30 @@ import PRC from "../public/images/projects/prc.png";
 import ETL from "../public/images/projects/etl.png";
 
 export default function Projects() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="w-full max-w-5xl flex flex-col portrait:pt-[3vh] portrait:pb-[6vh] pt-[5vh] pb-[10vh] portrait:items-center">
       <div className="w-full flex portrait:pt-4 items-center justify-center">
-        <h1 className="portrait:text-lg text-3xl font-bold text-white/70 text-center">
+        <h1
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          className="portrait:text-lg text-3xl font-bold text-white/70 text-center"
+        >
           Projects
         </h1>
       </div>
       <div className="flex flex-row flex-wrap pt-8 justify-center items-stretch gap-4">
-        <div className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="200"
+          data-aos-once="true"
+          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700"
+        >
           <Image
             src={CGC}
             alt="CGC Project"
@@ -31,7 +54,13 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="400"
+          data-aos-once="true"
+          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700"
+        >
           <Image
             src={Giftify}
             alt="Giftify Project"
@@ -48,7 +77,13 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="600"
+          data-aos-once="true"
+          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700"
+        >
           <Image
             src={PRC}
             alt="PRC Project"
@@ -65,7 +100,13 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="800"
+          data-aos-once="true"
+          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700"
+        >
           <Image
             src={ETL}
             alt="ETL Project"

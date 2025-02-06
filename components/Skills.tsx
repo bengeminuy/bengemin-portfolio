@@ -1,3 +1,11 @@
+"use client";
+
+import { useEffect } from "react";
+
+// @ts-expect-error: AOS is found
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { Marquee } from "./marquee";
 import Image from "next/image";
 
@@ -50,15 +58,30 @@ const secondRow = [
 ];
 
 export default function Work() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="w-full bg-[#18181b] flex justify-center items-center border-y-4">
       <section className="w-full flex flex-col portrait:pt-[3vh] portrait:pb-[6vh] pt-[5vh] pb-[10vh] items-center">
         <div className="w-full flex portrait:pt-4 items-center justify-center">
-          <h1 className="portrait:text-lg text-3xl font-bold text-white/70 text-center">
+          <h1
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            className="portrait:text-lg text-3xl font-bold text-white/70 text-center"
+          >
             Skills
           </h1>
         </div>
-        <p className="portrait:px-[1.5rem] max-w-3xl text-white pt-4 text-center">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          className="portrait:px-[1.5rem] max-w-3xl text-white pt-4 text-center"
+        >
           &ldquo;Tech evolves, and so do I. Over the years, I’ve mastered a
           diverse set of tools and technologies to build, create, and solve
           problems using the applications I design and develop. As the industry
@@ -69,7 +92,13 @@ export default function Work() {
           <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background z-10"></div>
           <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background z-10"></div>
           <div className="relative flex w-full flex-col gap-2 md:gap-4 items-center justify-center overflow-hidden mask">
-            <Marquee className="[--duration:20s]">
+            <Marquee
+              data-aos="fade-in"
+              data-aos-delay="400"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+              className="[--duration:20s]"
+            >
               {firstRow.map((logo) => {
                 return (
                   <Image
@@ -82,7 +111,14 @@ export default function Work() {
                 );
               })}
             </Marquee>
-            <Marquee reverse className="[--duration:20s]">
+            <Marquee
+              data-aos="fade-in"
+              data-aos-delay="600"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+              reverse
+              className="[--duration:20s]"
+            >
               {secondRow.map((logo) => {
                 return (
                   <Image
