@@ -1,11 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Open_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "../styles/globals.css";
-import NavBar from "@/components/NavBar/NavBar";
-import SplineContainer from "@/components/SplineContainer/SplineContainer";
-import WaveBG from "@/components/WaveBG/WaveBG";
+import GridBG from "@/components/GridBG";
 
-const openSans = Open_Sans({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: ".JB Fullstack Developer Web Portfolio",
@@ -25,11 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={openSans.className + " box-border transform scale-100"}>
-        <NavBar />
-        <SplineContainer />
+      <body className={inter.className + " box-border transform scale-100"}>
         {children}
-        <WaveBG />
+        <GridBG />
       </body>
     </html>
   );

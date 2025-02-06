@@ -1,0 +1,10 @@
+.purple-gradient-overlay {
+  background: -webkit-linear-gradient(
+    30deg,
+    var(--color-highlight) 35%,
+    var(--color-lighter-white)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
