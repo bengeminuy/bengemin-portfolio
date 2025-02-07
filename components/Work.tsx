@@ -21,9 +21,9 @@ export default function Work() {
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            className="portrait:text-lg text-3xl font-bold text-white/70 text-center"
+            className="portrait:text-lg text-3xl font-bold text-white/90 text-center"
           >
-            Career
+            {"< Career />"}
           </h1>
         </div>
         <div className="portrait:px-[1.5rem] pt-6 max-w-3xl">

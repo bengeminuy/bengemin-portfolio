@@ -25,9 +25,9 @@ export default function Projects() {
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
           data-aos-once="true"
-          className="portrait:text-lg text-3xl font-bold text-white/70 text-center"
+          className="portrait:text-lg text-3xl font-bold text-white/90 text-center"
         >
-          Projects
+          {"< Projects />"}
         </h1>
       </div>
       <div className="flex flex-row flex-wrap pt-8 justify-center items-stretch gap-4">

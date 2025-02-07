@@ -66,6 +66,15 @@ export default function Hero() {
         >
           {"Full-stack Developer"}
         </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="800"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          className="portrait:text-base text-2xl text-font-pr text-center landscape:text-start font-light text-white/70"
+        >
+          {"And an endlessly-learning explorer"}
+        </div>
       </div>
     </section>
   );

@@ -70,9 +70,9 @@ export default function Work() {
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            className="portrait:text-lg text-3xl font-bold text-white/70 text-center"
+            className="portrait:text-lg text-3xl font-bold text-white/90 text-center"
           >
-            Skills
+            {"< Skills />"}
           </h1>
         </div>
         <p
@@ -80,7 +80,7 @@ export default function Work() {
           data-aos-delay="200"
           data-aos-easing="ease-in-out"
           data-aos-once="true"
-          className="portrait:px-[1.5rem] max-w-3xl text-white pt-4 text-center"
+          className="portrait:px-[1.5rem] max-w-3xl text-white pt-8 text-center"
         >
           &ldquo;Tech evolves, and so do I. Over the years, I’ve mastered a
           diverse set of tools and technologies to build, create, and solve
