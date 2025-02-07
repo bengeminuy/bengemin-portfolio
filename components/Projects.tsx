@@ -36,7 +36,7 @@ export default function Projects() {
           data-aos-easing="ease-in-out"
           data-aos-delay="200"
           data-aos-once="true"
-          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700"
+          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <Image
             src={CGC}
@@ -59,7 +59,7 @@ export default function Projects() {
           data-aos-easing="ease-in-out"
           data-aos-delay="400"
           data-aos-once="true"
-          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700"
+          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <Image
             src={Giftify}
@@ -82,7 +82,7 @@ export default function Projects() {
           data-aos-easing="ease-in-out"
           data-aos-delay="600"
           data-aos-once="true"
-          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700"
+          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <Image
             src={PRC}
@@ -105,7 +105,7 @@ export default function Projects() {
           data-aos-easing="ease-in-out"
           data-aos-delay="800"
           data-aos-once="true"
-          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700"
+          className="max-w-xs rounded-lg shadow-sm bg-[#1f1f23] border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <Image
             src={ETL}
