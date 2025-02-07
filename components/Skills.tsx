@@ -9,27 +9,27 @@ import "aos/dist/aos.css";
 import { Marquee } from "./marquee";
 import Image from "next/image";
 
-import html from "../public/images/skills_bw/logo_html.png";
-import css from "../public/images/skills_bw/logo_css.png";
-import tailwind from "../public/images/skills_bw/logo_tailwind.png";
-import js from "../public/images/skills_bw/logo_javascript.png";
-import ts from "../public/images/skills_bw/logo_typescript.png";
-import react from "../public/images/skills_bw/logo_react.png";
-import next from "../public/images/skills_bw/logo_nextjs.png";
-import redux from "../public/images/skills_bw/logo_redux.png";
-import flutter from "../public/images/skills_bw/logo_flutter.png";
-import svelte from "../public/images/skills_bw/logo_svelte.png";
+import html from "../public/images/skills/logo_html.png";
+import css from "../public/images/skills/logo_css.png";
+import tailwind from "../public/images/skills/logo_tailwind.png";
+import js from "../public/images/skills/logo_javascript.png";
+import ts from "../public/images/skills/logo_typescript.png";
+import react from "../public/images/skills/logo_react.png";
+import next from "../public/images/skills/logo_nextjs.png";
+import redux from "../public/images/skills/logo_redux.png";
+import flutter from "../public/images/skills/logo_flutter.png";
+import svelte from "../public/images/skills/logo_svelte.png";
 
-import nodejs from "../public/images/skills_bw/logo_nodejs.png";
-import express from "../public/images/skills_bw/logo_expressjs.png";
-import cpp from "../public/images/skills_bw/logo_c++.png";
-import java from "../public/images/skills_bw/logo_java.png";
-import python from "../public/images/skills_bw/logo_python.png";
-import php from "../public/images/skills_bw/logo_php.png";
-import jquery from "../public/images/skills_bw/logo_jquery.png";
-import firebase from "../public/images/skills_bw/logo_firebase.png";
-import mongodb from "../public/images/skills_bw/logo_mongodb.png";
-import git from "../public/images/skills_bw/logo_git.png";
+import nodejs from "../public/images/skills/logo_nodejs.png";
+import express from "../public/images/skills/logo_expressjs.png";
+import cpp from "../public/images/skills/logo_c++.png";
+import java from "../public/images/skills/logo_java.png";
+import python from "../public/images/skills/logo_python.png";
+import php from "../public/images/skills/logo_php.png";
+import jquery from "../public/images/skills/logo_jquery.png";
+import firebase from "../public/images/skills/logo_firebase.png";
+import mongodb from "../public/images/skills/logo_mongodb.png";
+import git from "../public/images/skills/logo_git.png";
 
 const firstRow = [
   { name: "HTML", icon: html },
@@ -105,7 +105,7 @@ export default function Work() {
                     key={logo.name}
                     src={logo.icon}
                     alt={logo.name}
-                    className="h-[2rem] w-[2rem] md:h-[4rem] md:w-[4rem] aspect-square object-cover"
+                    className="h-[2rem] w-[2rem] md:h-[4rem] md:w-[4rem] aspect-square object-cover transition-all duration-300 filter grayscale hover:grayscale-0"
                     priority
                   />
                 );
@@ -125,7 +125,7 @@ export default function Work() {
                     key={logo.name}
                     src={logo.icon}
                     alt={logo.name}
-                    className="h-[2rem] w-[2rem] md:h-[4rem] md:w-[4rem] aspect-square object-cover"
+                    className="h-[2rem] w-[2rem] md:h-[4rem] md:w-[4rem] aspect-square object-cover transition-all duration-300 filter grayscale hover:grayscale-0"
                     priority
                   />
                 );
