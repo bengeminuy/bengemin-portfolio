@@ -19,6 +19,7 @@ import next from "../public/images/skills/logo_nextjs.png";
 import redux from "../public/images/skills/logo_redux.png";
 import flutter from "../public/images/skills/logo_flutter.png";
 import svelte from "../public/images/skills/logo_svelte.png";
+import vue from "../public/images/skills/logo_vue.png";
 
 import nodejs from "../public/images/skills/logo_nodejs.png";
 import express from "../public/images/skills/logo_expressjs.png";
@@ -29,6 +30,7 @@ import php from "../public/images/skills/logo_php.png";
 import jquery from "../public/images/skills/logo_jquery.png";
 import firebase from "../public/images/skills/logo_firebase.png";
 import mongodb from "../public/images/skills/logo_mongodb.png";
+import mysql from "../public/images/skills/logo_mysql.png";
 import git from "../public/images/skills/logo_git.png";
 
 const firstRow = [
@@ -42,6 +44,7 @@ const firstRow = [
   { name: "Redux", icon: redux },
   { name: "Flutter", icon: flutter },
   { name: "Svelte", icon: svelte },
+  { name: "Vue", icon: vue },
 ];
 
 const secondRow = [
@@ -54,6 +57,7 @@ const secondRow = [
   { name: "JQuery", icon: jquery },
   { name: "Firebase", icon: firebase },
   { name: "MongoDB", icon: mongodb },
+  { name: "MySQL", icon: mysql },
   { name: "Git", icon: git },
 ];
 
